@@ -11,11 +11,11 @@ const Navigation = () => {
 					<Logo className="logo" />
 				</Link>
 				<nav className="nav-links-container">
-					<Link to="/" className="nav-link">
-						Home
-					</Link>
 					<Link to="/shop" className="nav-link">
 						Shop
+					</Link>
+					<Link to="/login" className="nav-link">
+						Login
 					</Link>
 				</nav>
 			</header>
