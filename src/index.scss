@@ -1,9 +1,19 @@
 body {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(55, 55, 55);
+}
+
+* {
+	box-sizing: border-box;
 }
