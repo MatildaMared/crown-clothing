@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import {
-	createUserDocumentFromAuth,
 	signInWithGooglePopup,
 	loginAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../FormInput/FormInput";
-import Button from "../Button/Button";
+import Button, { BUTTON_TYPE_CLASSES } from "../Button/Button";
 import "./LoginForm.styles.scss";
 
 function LoginForm() {
@@ -78,7 +77,7 @@ function LoginForm() {
 					<Button type="submit">Log In</Button>
 					<Button
 						type="button"
-						buttonType="google"
+						buttonType={BUTTON_TYPE_CLASSES.google}
 						onClick={handleLoginWithGooglePopup}
 					>
 						LoginWithGoogle
