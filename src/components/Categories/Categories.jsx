@@ -1,12 +1,12 @@
 import "./Categories.styles.scss";
 import React from "react";
-import CategoryItem from "../CategoryItem/CategoryItem";
+import DirectoryItem from "../DirectoryItem/DirectoryItem";
 
 function Categories({ categories }) {
 	return (
 		<ul className="categories-container">
 			{categories.map((category) => (
-				<CategoryItem category={category} key={category.id} />
+				<DirectoryItem category={category} key={category.id} />
 			))}
 		</ul>
 	);
