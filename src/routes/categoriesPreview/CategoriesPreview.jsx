@@ -6,7 +6,7 @@ const CategoriesPreview = () => {
 	const { categoriesMap } = useContext(CategoriesContext);
 	return (
 		<>
-			{Object.keys(categoriesMap).map((title) => {
+			{categoriesMap && Object.keys(categoriesMap).map((title) => {
 				const products = categoriesMap[title];
 				return (
 					<CategoryPreview

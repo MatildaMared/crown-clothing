@@ -5,7 +5,8 @@ import {
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../FormInput/FormInput";
 import Button, { BUTTON_TYPE_CLASSES } from "../Button/Button";
-import "./LoginForm.styles.scss";
+import "./LoginForm.styles.jsx";
+import { ButtonsContainer, LoginContainer } from "./LoginForm.styles.jsx";
 
 function LoginForm() {
 	const [email, setEmail] = useState("");
@@ -44,7 +45,7 @@ function LoginForm() {
 	};
 
 	return (
-		<section className="log-in-container">
+		<LoginContainer>
 			<h2>Already have an account?</h2>
 			<span>Log in with your email and password</span>
 			<form onSubmit={handleLogin}>
@@ -73,7 +74,7 @@ function LoginForm() {
 				/>
 
 				{errorMessage && <p>{errorMessage}</p>}
-				<div className="buttons-container">
+				<ButtonsContainer>
 					<Button type="submit">Log In</Button>
 					<Button
 						type="button"
@@ -82,9 +83,9 @@ function LoginForm() {
 					>
 						LoginWithGoogle
 					</Button>
-				</div>
+				</ButtonsContainer>
 			</form>
-		</section>
+		</LoginContainer>
 	);
 }
 
